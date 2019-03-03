@@ -1,0 +1,18 @@
+input, select {
+  margin: 0 0 .83333rem;
+
+  border: 0 !important;
+  font-weight: 600 !important;
+
+  &::placeholder {
+    color: #999;
+  }
+
+  option:first-child {
+    color: #999;
+  }
+}
+
+input[type="button"], input[type="submit"] {
+  border: 2px solid white !important;
+}

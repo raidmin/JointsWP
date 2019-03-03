@@ -1,0 +1,22 @@
+.fp-tableCell {
+  vertical-align: top !important;
+
+  @include breakpoint (medium) {
+    padding-top: 8em;
+  }
+}
+
+.header {
+  @include breakpoint(medium) {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+  }
+}
+
+footer.footer {
+  @include breakpoint (large) {
+    position: absolute;
+    bottom: -0.5em;
+  }
+}

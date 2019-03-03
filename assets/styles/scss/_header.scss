@@ -1,0 +1,15 @@
+.header {
+  .top-bar {
+    background: $primary-color;
+  }
+}
+
+#navigation {
+  background: $primary-color;
+
+  a:link,a:visited {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+}

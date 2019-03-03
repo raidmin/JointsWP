@@ -1,0 +1,28 @@
+.card {
+  position: relative;
+  overflow: visible !important;
+
+  .card-section {
+    background: $light-gray;
+  }
+
+  .card-footer {
+    background: #013781;
+  }
+
+  > .number-label {
+    border: 2px solid white;
+    position: absolute;
+    top: -0.85em;
+    left: -0.9em;
+    height: 1.6em;
+    width: 1.6em;
+
+    &::after {
+      content: attr(num);
+      font-size: 1em;
+      color: white;
+      line-height: 2.1em;
+    }
+  }
+}

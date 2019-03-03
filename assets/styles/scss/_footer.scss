@@ -1,0 +1,16 @@
+footer.footer {
+  background: white;
+  width: 100%;
+  font-weight: 400;
+
+  .inner-footer {
+    border-top: 3px solid $primary-color;
+    align-items: baseline;
+  }
+
+  .menu-item:first-child {
+    a {
+      padding-left: 0;
+    }
+  }
+}

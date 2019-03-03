@@ -1,0 +1,104 @@
+<div style="position: relative">
+  <div class="grid-x grid-margin-x" data-equalizer data-equalize-on="medium">
+    <div class="cell large-6 medium-12 small-12">
+      <div class="card" data-equalizer-watch>
+        <div class="card-section">
+          <p style="font-weight: 400">Füllen Sie das Kontaktformular aus und wir schicken Ihnen gerne Informationsmaterial zu.</p>
+          <div class="grid-x grid-margin-x">
+            <div class="cell large-6 medium-6 small-12">
+              [text* last-name placeholder "Name*"]
+            </div>
+            <div class="cell large-6 medium-6 small-12">
+              [text* first-name placeholder "Vorname*"]
+            </div>
+          </div>
+          <div class="grid-x grid-margin-x">
+            <div class="cell large-6 medium-6 small-12">
+              [text* email placeholder "E-Mail*"]
+            </div>
+            <div class="cell large-6 medium-6 small-12">
+              [text* phone placeholder "Telefon*"]
+            </div>
+          </div>
+          <div class="grid-x grid-margin-x">
+            <div class="cell large-9 medium-9 small-12">
+              [text* street placeholder "Straße*"]
+            </div>
+            <div class="cell large-3 medium-3 small-12">
+              [text* number placeholder "Nr.*"]
+            </div>
+          </div>
+          <div class="grid-x grid-margin-x">
+            <div class="cell large-3 medium-3 small-12">
+              [text* postcode placeholder "PLZ*"]
+            </div>
+            <div class="cell large-9 medium-9 small-12">
+              [text* city placeholder "Ort*"]
+            </div>
+          </div>
+          <div class="grid-x grid-margin-x">
+            <div class="cell large-12 medium-12 small-12">
+              [text comment placeholder "Kommentar"]
+            </div>
+          </div>
+          <div style="font-weight: 400">
+            <p>Ich bestätige die Speicherung und Verarbeitung meiner Daten zum Zweck der Kontaktaufnahme und Geschäftsanbahnung **</p>
+            <p>*Pflichtfelder</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cell large-6 medium-12 small-12">
+      <div class="card" data-equalizer-watch>
+        <div class="card-section">
+          <p style="font-weight: 400">Für ein komplett unverbindliches und kostenloses Angebot für Ihr Objekt können Sie hier weitere Daten eingeben.</p>
+          <div class="grid-x grid-margin-x">
+            <div class="cell large-9 medium-9 small-12">
+              [text street-b placeholder "Straße"]
+            </div>
+            <div class="cell large-3 medium-3 small-12">
+              [text number-b placeholder "Nr."]
+            </div>
+          </div>
+          <div class="grid-x grid-margin-x">
+            <div class="cell large-3 medium-3 small-12">
+              [text postcode-b placeholder "PLZ"]
+            </div>
+            <div class="cell large-9 medium-9 small-12">
+              [text city-b placeholder "Ort"]
+            </div>
+          </div>
+          <div class="grid-x grid-margin-x">
+            <div class="cell large-6 medium-6 small-12">
+              [select object-type "Objektart" "Eigentumswohnung" "Einfamilienhaus" "Zweifamilienhaus" "Reihenhaus" "Mehrfamilienhaus" "Doppelhaushälfte"]
+            </div>
+            <div class="cell large-6 medium-6 small-12">
+              [text square-meters placeholder "Wohnfläche in m²*"]
+            </div>
+          </div>
+          <div class="grid-x grid-margin-x">
+            <div class="cell large-6 medium-6 small-12">
+              [select floor "Stockwerk" "0" "1" "2" "3" "4" "5" "6" "7" "8" "9" "10+"]
+            </div>
+            <div class="cell large-6 medium-6 small-12">
+              [select parking-area "Parkplatz" "0" "1" "2" "3" "4" "5" "6" "7" "8" "9" "10+"]
+            </div>
+          </div>
+          <div class="grid-x grid-margin-x">
+            <div class="cell large-6 medium-6 small-12">
+              [text year-of-construction placeholder "Baujahr"]
+            </div>
+            <div class="cell large-6 medium-6 small-12">
+              [text price placeholder "Kaufpreis"]
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="grid-x grid-margin-x" data-equalizer data-equalize-on="medium">
+    <div class="cell large-12 medium-12 small-12 form-button">
+      [submit class:button "Absenden"]
+    </div>
+  </div>
+</div>

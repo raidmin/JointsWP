@@ -1,0 +1,45 @@
+.accordion {
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion-item {
+  margin-bottom: 0.5rem;
+  //transition: color 0.5s ease, background 0.5s ease;
+  border-radius: 0.3rem !important;
+  display: flex;
+  flex-direction: column;
+
+  &.is-active {
+    background: $primary-color;
+    flex-grow: 1;
+
+    .accordion-title {
+      color: $light-gray;
+      background: $primary-color;
+    }
+
+    .accordion-content {
+      color: $light-gray;
+      background: $primary-color;
+    }
+  }
+}
+
+.accordion-title {
+  color: $primary-color;
+  background: $light-gray;
+  font-size: $global-font-size;
+  padding: 0.3rem 1rem;
+  border: 3px solid $primary-color !important;
+  //transition: color 0.3s ease, background 0.3s ease;
+  border-radius: 0.3rem !important;
+}
+
+.accordion-content {
+  color: $primary-color;
+  border: 3px solid $primary-color !important;
+  //transition: color 0.3s ease, background 0.3s ease;
+  border-radius: 0.3rem !important;
+  flex-grow: 1;
+}

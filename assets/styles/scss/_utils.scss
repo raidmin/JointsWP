@@ -1,0 +1,45 @@
+.background-cover {
+  max-width: 100vw;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  img {
+    min-height: 40em !important;
+    height: initial !important;
+    width: auto !important;
+    max-width: initial !important;
+  }
+
+  &::before {
+    content: '';
+    //background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+  }
+  //
+  //.background-image {
+  //  background-size: cover;
+  //  position: absolute;
+  //  top: 0;
+  //  right: 0;
+  //  bottom: 0;
+  //  left: 0;
+  //  z-index: 1;
+  //}
+}
+
+.has-primary-background-color {
+  background: $primary-color;
+}
+
+.has-primary-color {
+  color: $primary-color;
+}

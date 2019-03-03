@@ -1,0 +1,85 @@
+.ajax-loader {
+  background-color: rgba(255, 255, 255, 0.5);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 16px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100% !important;
+  width: 100% !important;
+  margin: 0 !important;
+  transition: opacity 0.3s ease;
+  visibility: visible !important;
+  pointer-events: none;
+  opacity: 0;
+
+  &.is-active {
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+
+@include breakpoint (medium) {
+  span.wpcf7-not-valid-tip {
+    white-space: nowrap;
+  }
+
+  .cell:nth-of-type(1) {
+    span.wpcf7-not-valid-tip {
+      float: left;
+    }
+  }
+
+  .cell:nth-of-type(2) {
+    span.wpcf7-not-valid-tip {
+      float: right;
+    }
+  }
+}
+
+.wpcf7-not-valid-tip {
+  @extend .help-text;
+  margin-bottom: $global-margin;
+}
+
+.form-button {
+  text-align: center;
+  position: relative;
+
+  .button {
+    background: $secondary-color !important;
+    width: 12em;
+    max-width: 90vw;
+  }
+
+  @include breakpoint (large) {
+    margin-top: -4rem;
+  }
+}
+
+.wpcf7-response-output {
+  margin: 0 !important;
+}
+
+.wpcf7-form-control[type="text"] {
+  &.error {
+    background: $alert-color !important;
+
+    &::placeholder {
+      color: white !important;
+    }
+  }
+
+  &.valid {
+    background: $success-color !important;
+  }
+}
+
+html.error {
+  .wpcf7-submit {
+    background: $alert-color !important;
+  }
+}

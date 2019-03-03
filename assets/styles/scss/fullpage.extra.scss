@@ -1,0 +1,12 @@
+// Import local Foundation overrides - Don't link to Bower version as it will be overwritten whenever updated
+@import "settings";
+
+// Import foundation.scss from vendor files
+@import "../../../node_modules/foundation-sites/scss/foundation";
+
+// Import Motion-UI from vendor files
+@import "../../../node_modules/motion-ui/src/motion-ui";
+@include motion-ui-transitions;
+@include motion-ui-animations;
+
+@import "fullpage";
